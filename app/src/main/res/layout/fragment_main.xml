@@ -1,0 +1,45 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" tools:context=".MainActivityFragment">
+
+    <LinearLayout
+        android:id="@+id/tableAbove"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/welcomeName"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="#01579B"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="List of Contacts"
+                android:textSize="30dp"/>
+            <!--<EditText-->
+                <!--android:id="@+id/textForSearch"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:maxLength="25"-->
+                <!--android:lines="1"-->
+                <!--android:hint="Search by Name or Last Name"/>-->
+            <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/listContacts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+    </LinearLayout>
+</RelativeLayout>

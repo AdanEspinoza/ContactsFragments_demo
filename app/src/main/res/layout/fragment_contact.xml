@@ -1,0 +1,116 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.contacts.com.contacts.ContactFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeFragment">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btnImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@mipmap/profile"
+                android:scaleType="center"
+                />
+                <EditText
+                        android:id="@+id/txtName"
+                        android:hint="Name"
+                        android:maxLength="25"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:layout_span="2"/>
+                    <EditText
+                        android:id="@+id/txtLast"
+                        android:hint="Last Name"
+                        android:maxLength="25"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:inputType="textPersonName"
+                        android:layout_span="2"/>
+                    <EditText
+                        android:id="@+id/txtPhone"
+                        android:hint="Phone number"
+                        android:maxLength="10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:inputType="phone"
+                        android:layout_span="2"/>
+                <EditText
+                    android:id="@+id/txtCareer"
+                    android:hint="Career"
+                    android:maxLength="25"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="text"
+                    android:layout_span="2"/>
+
+                <EditText
+                    android:id="@+id/txtMail"
+                    android:hint="Email"
+                    android:maxLength="35"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textEmailAddress"
+                    android:layout_span="2"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/txtAddress"
+                    android:hint="Address"
+                    android:lines="2"
+                    android:maxLength="80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:id="@+id/btnMaps"
+                    android:background="@drawable/location"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Add"/>
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Clear All"/>
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Delete"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
